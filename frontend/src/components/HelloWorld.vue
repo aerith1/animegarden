@@ -48,7 +48,7 @@
     },
     methods: {
       fetchAnimes(){
-        const url = 'http://127.0.0.1:5000?page=' + this.page
+        const url = 'http://47.104.234.77:81?page=' + this.page
         axios.get(url).then(response => {
           console.log(response.data)
           this.data = response.data["data"]
